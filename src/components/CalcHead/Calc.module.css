@@ -1,0 +1,16 @@
+.head {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+.head_img {
+    width: 30px;
+    height: 30px;
+}
+.head_txt {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}

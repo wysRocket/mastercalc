@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CalcHead from './components/CalcHead/Calc';
+import CalcContainer from './components/CalcBody/CalcContainer'
+import { Switch, Route } from 'react-router-dom';
+import ResultsContainer from './components/CalcResults/ResultsContainer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CalcHead />
+      <Switch>
+        <Route exact path='/' render={ () =><CalcContainer />}/>
+        <Route path='/results' render={ () =><ResultsContainer />}/>
+      </Switch>
     </div>
   );
 }

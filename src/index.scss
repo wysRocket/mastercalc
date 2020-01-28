@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.input-group-text {
+  max-height: 38px;
+}
+.btns {
+  margin-bottom: 20px;
+}
+.ceiling_btn {
+  margin-right: 20px;
+  background: url("../src/components/img/ceiling.png") no-repeat ;
+  background-position: 5px 5px;
+  background-size: 22px 30px;
+  padding: 10px 15px 10px 25px;
+}
+.walls_btn {
+  margin-right: 20px;
+  background: url("../src/components/img/wall.png") no-repeat ;
+  background-position: 5px 5px;
+  background-size: 22px 30px;
+  padding: 10px 15px 10px 25px;
+}
+.floor_btn {
+  background: url("../src/components/img/floor.png") no-repeat ;
+  background-position: 5px 5px;
+  background-size: 40px 30px;
+  padding: 10px 15px 10px 45px;
+}
+.flexrev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.nav-link {
+  margin-right: 15px;
+}
+.mastercalc-background {
+  background-color: #375D6F;
+  color: #fff;
+}
+.ask-email {
+  white-space: nowrap;
+}
+.quotation-summary {
+  border-bottom: 1px solid #375D6F;
+}
